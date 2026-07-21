@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-red: ##e3646e;
+  --color-blue: #3996db;
+  --color-purple: #bb72e9;
+  --color-green: #82bc4f;
+  --color-yellow: #eabd5f;
+
+  --color-gray-100: #e2e4e9;
+  --color-gray-200: #c0c4ce;
+  --color-gray-300: #878ea1;
+  --color-gray-400: #292c34;
+  --color-gray-500: #16181d;
+  --color-gray-600: #0d0e11;
+}
+.title-lg {
+  font-family: "Asap", sans-serif;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 120%;
+}
+.title-md {
+  font-family: "Asap", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 120%;
+}
+.title-sm {
+  font-family: "Asap", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 120%;
+}
+.subtitle {
+  font-family: "Inconsolata", monospace;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--color-purple);
+}
+.marv-text-md {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.marv-text-sm {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+/* sections */
+
+footer {
+  background-image: url("../images/Background_Contacts.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 120px;
+  padding-bottom: 200px;
+
+  h1 {
+    color: var(--color-gray-100);
+  }
+
+  p {
+    color: var(--color-gray-200);
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+}
+
+.form {
+  margin-top: 48px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+input {
+  width: 400px;
+  height: 48px;
+  padding: 20px;
+  border-radius: 4px;
+  border-color: var(--color-gray-400);
+  background-color: var(--color-gray-400);
+}
+
+::placeholder {
+  color: var(--color-gray-300);
+}
