@@ -41,6 +41,7 @@ h3 {
 p {
   font-family: "Opens sans", sans-serif;
   font-size: 16px;
+  line-height: 25px;
 }
 
 body {
@@ -53,11 +54,21 @@ body {
   margin-top: 30px;
 }
 
+img {
+  border: 1px solid var(--color-secondary);
+  border-radius: 25px;
+}
+
 .title {
   width: 1120px;
   height: 80px;
   margin-top: 10px;
   padding: 8px;
+}
+
+.subtitle {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .headline {
@@ -72,14 +83,63 @@ body {
   padding: 10px;
 }
 
+.commomText {
+  padding-bottom: 35px;
+}
+
 #header {
   width: 1120px;
   display: flex;
   flex-direction: column;
 }
+
 #container {
+  padding-top: 35px;
   width: 1120px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#card-travel {
+  margin-top: 35px;
+  padding-bottom: 20px;
+}
+
+#card-travel h3 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+#content-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#content-card h3 {
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+#content-card ul {
+  padding-left: 12px;
+  color: var(--color-acent-blue);
+  font-weight: 600;
+  font-size: 22px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: "100%";
+  gap: 15px;
+}
+footer p {
+  text-align: center;
+  padding: 30px;
 }
