@@ -19,6 +19,10 @@
   --color-gray-600: #0d0e11;
 }
 
+body {
+  font-family: "Asap", sans-serif;
+}
+
 .title-lg {
   font-family: "Asap", sans-serif;
   font-size: 56px;
@@ -258,5 +262,78 @@ input {
     font-size: 16px;
     color: var(--color-gray-200);
     font-weight: 400;
+  }
+}
+#hero {
+  background-image: url("../images/Background_Intro.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 200px;
+}
+
+#perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  p {
+    padding: 40px 0px 30px 0px;
+    color: var(--color-gray-100);
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 52px;
+    font-family: "Asap", sans-serif;
+    color: var(--color-gray-100);
+    padding: 0px 0px 10px 0px;
+  }
+
+  h2 {
+    width: 900px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    font-family: "Asap", sans-serif;
+    font-weight: 300;
+    color: var(--color-gray-100);
+  }
+}
+
+#Stacks {
+  ul {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+
+  ul li {
+    background-color: var(--color-gray-400);
+
+    width: 120px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    padding: 12px;
+    gap: 60px;
+  }
+
+  span {
+    color: var(--color-gray-100);
   }
 }
