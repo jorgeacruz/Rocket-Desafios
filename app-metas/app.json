@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "comprar",
+    "slug": "comprar",
+    "scheme": "comprar",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/ios-icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/ios-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#3d44cd"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.comprar",
+      "icon": "./assets/ios-icon.png"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#3d44cd"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.comprar"
+    },
+    
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ]
+  }
+}
