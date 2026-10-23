@@ -1,27 +1,30 @@
 import React from "react";
-import { View, Text, StyleSheet, Button } from "react-native";
-import { router, useLocalSearchParams } from "expo-router";
+import { View } from "react-native";
+import { useLocalSearchParams } from "expo-router";
+import PageHeader from "@/components/PageHeader";
+import Progress from "@/components/Progress";
+
+//details
+const details = {
+  current: "R$ 580,00",
+  target: "R$ 2.000,00",
+  percentage: 25,
+};
 
 export default function Inprogress() {
   const params = useLocalSearchParams<{ id: string }>();
 
   return (
-    <View style={styles.container}>
-      <Text>{params.id}</Text>
-      <Button title="voltando" onPress={() => router.back()} />
+    <View style={{ flex: 1, padding: 24, backgroundColor: "#fff", gap: 32 }}>
+      <PageHeader
+        title="Apple Watch"
+        rightButton={{
+          icon: "edit",
+          onPress: () => ({}),
+        }}
+      />
+
+      <Progress data={details} />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  buttonBack: {
-    backgroundColor: "#6200ff",
-    padding: 25,
-    borderRadius: 35,
-  },
-});

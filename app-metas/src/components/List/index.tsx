@@ -34,9 +34,9 @@ export function List<T>({
         ItemSeparatorComponent={() => <Separator color={colors.black} />}
         contentContainerStyle={styles.listContent}
         showsVerticalScrollIndicator={false}
-        ListEmptyComponent={() => {
-          <Text style={styles.empty}>{emptyMessage}</Text>;
-        }}
+        ListEmptyComponent={() => (
+          <Text style={styles.empty}>{emptyMessage}</Text>
+        )}
         {...rest}
       />
     </View>
