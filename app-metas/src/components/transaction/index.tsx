@@ -19,7 +19,7 @@ type Props = {
   onRemove: () => void;
 };
 
-export function Transaction({ data, onRemove }: Props) {
+export default function Transaction({ data, onRemove }: Props) {
   return (
     <View style={styles.container}>
       <MaterialIcons

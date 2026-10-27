@@ -27,10 +27,10 @@
       "predictiveBackGestureEnabled": false,
       "package": "com.anonymous.comprar"
     },
-    
     "plugins": [
       "expo-router",
-      "expo-font"
+      "expo-font",
+      "expo-sqlite"
     ]
   }
 }

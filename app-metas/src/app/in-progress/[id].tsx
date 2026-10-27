@@ -6,7 +6,8 @@ import Button from "@/components/Button";
 import PageHeader from "@/components/PageHeader";
 import Progress from "@/components/Progress";
 import { List } from "@/components/List";
-import { Transaction, TransactionProps } from "@/components/Transaction";
+import Transaction from "@/components/Transaction";
+import { TransactionProps } from "@/components/Transaction";
 import { TransactionTypes } from "@/utils/TransacionTypes";
 //details
 const details = {
